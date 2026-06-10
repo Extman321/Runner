@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://8hnb58k4hmpn" path="res://Assets Godot Runner/Assets Godot Runner/middleground1.png" id="4_y28df"]
 [ext_resource type="Texture2D" uid="uid://cvrquqv2p25en" path="res://Assets Godot Runner/Assets Godot Runner/player.png" id="6_reiul"]
 [ext_resource type="Script" uid="uid://dwcy3ewaaoh76" path="res://Scripts/jogador.gd" id="6_xmmbr"]
+[ext_resource type="Script" uid="uid://vmhbivj4pth0" path="res://Scripts/gerador_obstaculos.gd" id="8_p2wm8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ovbra"]
 size = Vector2(2319, 34)
@@ -157,12 +158,15 @@ script = ExtResource("6_xmmbr")
 
 [node name="Imagem" type="AnimatedSprite2D" parent="Jogador" unique_id=715493057]
 texture_filter = 1
-position = Vector2(33, 586)
+position = Vector2(56, 585)
 scale = Vector2(3.0625, 3.1927083)
 sprite_frames = SubResource("SpriteFrames_4aojw")
 animation = &"Parado"
 frame_progress = 0.6472585
 
 [node name="Corpo" type="CollisionShape2D" parent="Jogador" unique_id=1429232359]
-position = Vector2(33, 580)
+position = Vector2(55, 580)
 shape = SubResource("CapsuleShape2D_xmmbr")
+
+[node name="GeradorObstaculos" type="Node2D" parent="." unique_id=1205267180]
+script = ExtResource("8_p2wm8")

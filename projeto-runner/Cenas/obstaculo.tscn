@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfqge554btuwe"]
+
+[ext_resource type="Script" uid="uid://dj71w3ffv6ilt" path="res://Scripts/obstaculo.gd" id="1_jo2yb"]
+[ext_resource type="Texture2D" uid="uid://psu4fcj7hlia" path="res://Assets Godot Runner/Assets Godot Runner/thorn.png" id="2_am8eb"]
+
+[node name="Obstaculo" type="Area2D" unique_id=1773265956]
+position = Vector2(5, 10)
+script = ExtResource("1_jo2yb")
+
+[node name="ImagemObstaculo" type="Sprite2D" parent="." unique_id=375439268]
+position = Vector2(-4.999998, -9.000002)
+scale = Vector2(4.625, 3.3125)
+texture = ExtResource("2_am8eb")
+
+[node name="CorpoObstaculo" type="CollisionShape2D" parent="." unique_id=1961565013]
